@@ -10,6 +10,7 @@
     "deploy:static": "next build"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.0.0",
     "@strapi/blocks-react-renderer": "^1.0.1",
     "disqus-react": "^1.1.5",
     "husky": "^9.0.11",
