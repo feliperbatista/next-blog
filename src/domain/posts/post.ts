@@ -83,7 +83,7 @@ export type PostCoverAttributes = {
 
 export type PostAttributesData = {
   title: string;
-  content: ContentData;
+  content: string;
   slug: string;
   createdAt: string;
   updatedAt: string;
@@ -91,14 +91,6 @@ export type PostAttributesData = {
   author: PostAuthor;
   category: PostCategory;
   cover: PostCover;
-};
-
-export type ContentData = {
-  data: [{ type: string; children: ContentChildrenData }];
-};
-
-export type ContentChildrenData = {
-  data: [{ text: string; type: string }];
 };
 
 export type PostData = {

@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@strapi/blocks-react-renderer": "^1.0.1",
+    "disqus-react": "^1.1.5",
+    "husky": "^9.0.11",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-markdown": "^9.0.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "styled-components": "^6.1.8"

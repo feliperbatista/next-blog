@@ -3,18 +3,14 @@ import { getAllPosts } from '@/data/posts/get-all-posts';
 import { getPost } from '@/data/posts/get-post';
 import { PostData } from '@/domain/posts/post';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { Post } from '@/containers/Posts';
 
 export type DynamicPostProps = {
   post: PostData;
 };
 
 const DynamicPost = ({ post }: DynamicPostProps) => {
-  return (
-    <>
-      <p>{post.attributes.title}</p>
-      <p dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
-    </>
-  );
+  return <Post post={post} />;
 };
 
 export default DynamicPost;
