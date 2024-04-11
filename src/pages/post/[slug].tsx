@@ -3,7 +3,7 @@ import { getAllPosts } from '@/data/posts/get-all-posts';
 import { getPost } from '@/data/posts/get-post';
 import { PostData } from '@/domain/posts/post';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Post } from '@/containers/Posts';
+import { Post } from '@/containers/Post';
 
 export type DynamicPostProps = {
   post: PostData;
